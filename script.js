@@ -109,7 +109,8 @@ const createTaskElement = (taskText, isChecked) => {
 
   // If coming from localStorage, apply pre-checked state
   if (isChecked) {
-    checkbox.checked = true;
+    checkbox.checked = "true";
+    //checkbox.setAttribute("checked", "true");
     taskTextElement.style.textDecoration = "line-through";
   }
 
